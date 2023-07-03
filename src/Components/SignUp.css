@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerOfContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    background-color: #000033;
+}
+
+.container-signUp {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-signUp h1{
+    font-size: 2.7em;
+    margin-bottom: 20px;
+}
+.form-signUp {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(6, auto);
+    background-color:#000033;
+    gap: 20px;
+    margin-top: 10px;
+}
+.form-signUp input {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+.password {
+    width: 100%;
+}
+
+.passworerror {
+    grid-column: 1/13;
+    grid-row: 3/4;
+}
+
+.emailerror {
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+
+.email {
+    width: 100%;
+}
+
+.username {
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
+
+.signUpButton {
+    grid-column: 4/10;
+    grid-row: 4/5;
+    background-color:rgb(85, 208, 255);
+    color: white;
+    border: rgb(85, 208, 255) solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.containerOfContainer input {
+    background-color: white;
+    border: solid #dfe1e3 3px;
+    border-radius: 5px;
+    padding: 10px;
+        font-size: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+ .containerOfContainer input::placeholder {
+    padding-left: 10px;
+    color: #b0a6bd;
+}
+
+ .containerOfContainer h1 {
+    color: rgb(85, 208, 255);
+}
+
+.word {
+    grid-column: 1/13;
+    grid-row:5/6;
+    text-align: center;
+    color:white;
+}
+
+.already-signIn {
+    color: rgb(85, 208, 255);
+}

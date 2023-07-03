@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "userId": 1,
+      "post": [],
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": [],
+  "users": [
+    {
+      "username": "amer",
+      "password": "Amer!1234",
+      "email": "amer@gmail.com",
+      "id": 1
+    }
+  ]
+}
