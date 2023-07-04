@@ -5,12 +5,13 @@ import Homepage from "./Components/Homepage";
 import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
 import NewPost from "./Components/Post";
+import Possst from "./Components/Possst";
 import Footer from "./Components/Footer";
 function App() {
-  
   return (
     <>
       <BrowserRouter>
+        <Possst />
         <Routes>
           <Route path="/" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />
@@ -26,4 +27,3 @@ function App() {
 }
 
 export default App;
-
