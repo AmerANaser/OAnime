@@ -7,7 +7,19 @@ import "./Homepage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faFire, faTv } from "@fortawesome/free-solid-svg-icons";
 import LandingPage from "./LandingPage"
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 function Homepage() {
+
+  const user = JSON.parse(localStorage.getItem("user"));
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    localStorage.removeItem("user");
+
+    navigate("/");
+  };
   const {
     handleSubmit,
     search,
@@ -32,6 +44,10 @@ function Homepage() {
         return <LandingPage rendered={rendered} />;
     }
   };
+
+
+
+  
 
   return (
     <>
@@ -91,7 +107,9 @@ function Homepage() {
           </form> */}
         </div>
 
-        <button class=" logout1">logout </button>
+        <button class=" logout1" onClick={handleLogOut}>
+          logout{" "}
+        </button>
       </header>
       {switchComponent()}
     </>

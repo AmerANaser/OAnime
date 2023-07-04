@@ -15,7 +15,7 @@ function SignIn() {
     // get  the current user
     try {
       const { data: user } = await axios.get(
-        `http://localhost:9000/users?email=${email}&password=${password}`
+        `http://localhost:9000/users/?email=${email}&password=${password}`
       );
 
       if (user.length === 0) return setError(true);

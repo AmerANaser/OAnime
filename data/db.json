@@ -4,16 +4,45 @@
       "userId": 1,
       "post": [],
       "id": 1
+    },
+    {
+      "content": "asdf",
+      "timestamp": "2023-07-04T00:04:40.774Z",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "post": [],
+      "id": 3
+    },
+    {
+      "content": "fdgwdfgdfsdsfsdasfd",
+      "timestamp": "2023-07-04T00:06:55.278Z",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "content": "amer naser is the king of all time \n\n\n\n",
+      "timestamp": "2023-07-04T00:08:06.896Z",
+      "userId": 1,
+      "id": 5
     }
   ],
   "comments": [],
   "profile": [],
   "users": [
     {
-      "username": "amer",
-      "password": "Amer!1234",
-      "email": "amer@gmail.com",
+      "name": "itachi",
+      "password": "itachi1234@",
+      "email": "itachi@gmail.com",
       "id": 1
+    },
+    {
+      "name": "naruto",
+      "password": "naruto1234@1",
+      "email": "naruto@gmail.com",
+      "id": 2
     }
   ]
 }

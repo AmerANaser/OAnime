@@ -135,6 +135,11 @@ height: 350px;
 width: 200px;
 }
 
+.character a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .character img {
 width: 100%;
 }

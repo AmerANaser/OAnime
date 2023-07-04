@@ -20,7 +20,7 @@ function App() {
           <Route path="/post" element={<NewPost />} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
