@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../context/global'
 import NewPost from './Post';
-
+// import PostsComponent from './Possst';
 
 function LandingPage({ rendered }) {
   const { upcomingAnime, isSearch, searchResults } = useGlobalContext();
 
   return(<>
  <NewPost/>
+ {/* <PostsComponent/> */}
   </>);
 }
 

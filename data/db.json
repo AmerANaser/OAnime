@@ -1,36 +1,26 @@
 {
   "posts": [
     {
-      "userId": 1,
-      "post": [],
+      "content": "ad",
+      "timestamp": "2023-07-05T15:18:53.308Z",
+      "userId": 2,
+      "comment": [
+        {
+          "comment": "eqr",
+          "date": "7/5/2023, 6:21:59 PM",
+          "id": "7/5/2023, 6:21:59 PM"
+        }
+      ],
       "id": 1
     },
     {
-      "content": "asdf",
-      "timestamp": "2023-07-04T00:04:40.774Z",
-      "userId": 1,
-      "id": 2
-    },
-    {
+      "content": "fdsfsaf",
+      "timestamp": "2023-07-05T15:19:15.410Z",
       "userId": 2,
-      "post": [],
-      "id": 3
-    },
-    {
-      "content": "fdgwdfgdfsdsfsdasfd",
-      "timestamp": "2023-07-04T00:06:55.278Z",
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "content": "amer naser is the king of all time \n\n\n\n",
-      "timestamp": "2023-07-04T00:08:06.896Z",
-      "userId": 1,
-      "id": 5
+      "comment": [],
+      "id": 2
     }
   ],
-  "comments": [],
-  "profile": [],
   "users": [
     {
       "name": "itachi",

@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Possst />
         <Routes>
           <Route path="/" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />

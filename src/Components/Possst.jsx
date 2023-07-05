@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Possst.css"
+
+
 const PostsComponent = () => {
   const [posts, setPosts] = useState([]);
   const [newPostTitle, setNewPostTitle] = useState("");
@@ -103,33 +104,37 @@ const PostsComponent = () => {
       <button onClick={addPost}>Add Post</button>
 
       <h1>Posts</h1>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.content}</p>
-          <button onClick={() => deletePost(post.id)}>Delete Post</button>
+      {posts.length > 0 ? (
+        posts.map((post) => (
+          <div key={post.id}>
+            <h2>{post.title}</h2>
+            <p>{post.content}</p>
+            <button onClick={() => deletePost(post.id)}>Delete Post</button>
 
-          <h3>Comments</h3>
-          {post.comments.map((comment) => (
-            <div key={comment.id}>
-              <p>{comment.text}</p>
-              <button onClick={() => deleteComment(post.id, comment.id)}>
-                Delete Comment
-              </button>
-            </div>
-          ))}
+            <h3>Comments</h3>
+            {post.comments.map((comment) => (
+              <div key={comment.id}>
+                <p>{comment.text}</p>
+                <button onClick={() => deleteComment(post.id, comment.id)}>
+                  Delete Comment
+                </button>
+              </div>
+            ))}
 
-          <input
-            type="text"
-            value={newComment}
-            onChange={(e) => setNewComment(e.target.value)}
-            placeholder="Enter comment"
-          />
-          <button onClick={() => addComment(post.id, newComment)}>
-            Add Comment
-          </button>
-        </div>
-      ))}
+            <input
+              type="text"
+              value={newComment}
+              onChange={(e) => setNewComment(e.target.value)}
+              placeholder="Enter comment"
+            />
+            <button onClick={() => addComment(post.id, newComment)}>
+              Add Comment
+            </button>
+          </div>
+        ))
+      ) : (
+        <p>No posts available.</p>
+      )}
     </div>
   );
 };
